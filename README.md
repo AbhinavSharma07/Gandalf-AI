@@ -35,11 +35,6 @@ For more info check out this [article](https://towardsdatascience.com/reinforcem
 * Pandas (https://pypi.org/project/pandas/)
 * Matplotlib (https://pypi.org/project/matplotlib/)
 
-## Usage
-
-
-
-
 
 ### Main Page
 <p align="center">
