@@ -1,0 +1,13 @@
+Django==3.1.13          # Last version from 3.x series
+yfinance==0.2.31
+numpy==1.23.5
+tensorboard==2.13.0
+tensorflow==2.13.0
+tensorflow-estimator==2.13.0
+seaborn==0.12.2
+pandas==2.1.1
+pandas-datareader==0.10.0
+matplotlib==3.7.3
+sklearn==1.3.0          # Also known as scikit-learn
+mpld3==0.5.9
+tqdm==4.66.1
