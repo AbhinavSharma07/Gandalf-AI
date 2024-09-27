@@ -36,5 +36,35 @@ For more info check out this [article](https://towardsdatascience.com/reinforcem
 * Matplotlib (https://pypi.org/project/matplotlib/)
 
 ## Usage
+### Main Page
+<p align="center">
+<img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Main.PNG" align="middle" />  </p>
+
+The main page gives you three options to choose from:
+
+### 1. Stock Info
+<p align="center">
+<img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Info.PNG" align="middle" />  </p>
+Just Input the Symbol of the Stock and the Duration for which to get the data and the data is fetched using the yahoo-finance library and graphed using matplotlib and mpld3.
+<p align="center">
+<img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Info-done.png" align="middle" />  </p>
+The details are shown in the table and the closing prices are graphed. Hover your mouse over the points will give you a tooltip with the date and the closing price for that day.
+
+### 2. Prediction
+<p align="center">
+<img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Prediction.png" align="middle" />  </p>
+For the prediction you have to input the Symbol for the Stock, the Period of Data to train with, The Number of Simulations to run, and the Number of Future Days to predict for.
+<p align="center">
+<img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Prediction-done.png" align="middle" />  </p>
+The closing prices of the simulations that are deemed acceptable is graphed using matplotlib and mpld3. Hover your mouse over the points will give you a tooltip with the date and the closing price for that day.
+
+### 3.Trading Agent
+<p align="center">
+<img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Agent.png" align="middle" />  </p>
+For the trading agent you have to input the Symbol for the Stock, the Period of Data to trade on, The Initial Fund, and the Number of Days to Skip in between selling or buying.
+<p align="center">
+<img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Agent-done.png" align="middle" />  </p>
+The closing prices is graphed and the selling and buying days are marked with their respective markers using matplotlib and mpld3. Hover your mouse over the marker to get the date and the action done on that day.
+
 
 First start the django server using the following line,
