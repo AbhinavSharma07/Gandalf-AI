@@ -1,93 +1,58 @@
 # Gandalf-AI-GUI
 
-Stock Market Prediction & Trading Bot AI with an Interactive Web Interface
+**Stock Market Prediction & Trading Bot AI with a Web Interface**
 
-## Advanced Stock Market Prediction with LSTM Network
+---
 
-Long Short Term Memory (LSTM) networks are a revolutionary type of Recurrent Neural Networks (RNNs) known for their ability to capture long-term dependencies. Introduced by Hochreiter & Schmidhuber (1997), and refined over the years, LSTMs have become essential for solving complex sequential data problems. Unlike standard RNNs, LSTMs effectively tackle the vanishing gradient problem, making them ideal for stock market prediction.
+## 📈 Stock Market Prediction using an LSTM Network
 
-<p align="center">
-<img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/lstm_model.png" align="middle" />
-</p>
-
-All RNNs have a chain-like structure of repeating modules. While standard RNNs may consist of a single tanh layer, LSTMs have a more intricate architecture with four layers that interact in a distinctive way. This complexity allows LSTMs to perform exceptionally well in forecasting stock trends over long periods.
-
-For an in-depth understanding, read this [comprehensive article](https://colah.github.io/posts/2015-08-Understanding-LSTMs/).
-
-## Stock Market Agent Powered by Evolution Strategy
-
-Evolution Strategy (ES) is a powerful, yet simple, method for optimizing a landscape of possible solutions. Imagine a trading agent in a dynamic environment that uses a neural network to decide the best actions (buy, sell, hold). This agent processes stock data and determines the probabilities of different market actions.
+Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people in following work. They work tremendously well on a large variety of problems, and are now widely used. LSTMs are explicitly designed to avoid the vanishing gradient problem.
 
 <p align="center">
-<img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/evolve_agent.png" align="middle" />
+  <img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/lstm_model.png" alt="LSTM Model" width="600"/>
 </p>
 
-In reinforcement learning, our goal is to optimize the neural network parameters (weights and biases) so that the agent maximizes its rewards (profits) over time. By using evolutionary strategies, we can bypass traditional gradient-based learning and evolve our trading agent in a more explorative and adaptive manner.
+All recurrent neural networks have the form of a chain of repeating modules of neural network. In standard RNNs, this repeating module will have a very simple structure, such as a single tanh layer. LSTMs also have this chain-like structure, but the repeating module has a different architecture. Instead of having a single neural network layer, there are four, interacting in a very special way.
 
-For a deeper dive into the methodology, check out this [insightful article](https://towardsdatascience.com/reinforcement-learning-without-gradients-evolving-agents-using-genetic-algorithms-8685817d84f).
+🔗 [Understanding LSTMs - Colah's Blog](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
-## Requirements
+---
 
-Ensure you have the following software and libraries installed:
+## 🤖 Stock Market Agent using Evolution Strategy Agent
 
-- **Python 3.6.2** (https://www.python.org/downloads/release/python-362/)
-- **Django** (https://www.djangoproject.com/)
-- **Numpy** (https://pypi.org/project/numpy/)
-- **Tensorflow** (https://pypi.org/project/tensorflow/)
-- **Keras** (https://pypi.org/project/Keras/)
-- **Seaborn** (https://pypi.org/project/seaborn/)
-- **Yahoo-Finance** (https://pypi.org/project/yahoo-finance/)
-- **Pandas** (https://pypi.org/project/pandas/)
-- **Matplotlib** (https://pypi.org/project/matplotlib/)
-
-## Web Interface Overview
-
-### Main Dashboard
+Even though the name sounds fancy, under the hood, it’s perhaps the simplest algorithm you can devise for exploring a landscape. Consider an agent in an environment (like Pong) that’s implemented via a neural network. It takes pixels in the input layer and outputs probabilities of actions available to it (move the paddle up, down, or do nothing).
 
 <p align="center">
-<img src="https://github.com/AbhinavSharma07/Gandalf-AI/blob/main/assets/Main.png" align="middle" />
+  <img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/evolve_agent.png" alt="Evolution Strategy Agent" width="600"/>
 </p>
 
-The dashboard provides three primary functionalities for users:
+Our task in reinforcement learning is to find the parameters (weights and biases) of the neural network that make the agent win more often and hence get more rewards.
 
-### 1. **Stock Information**
+🔗 [Reinforcement Learning without Gradients - Towards Data Science](https://towardsdatascience.com/reinforcement-learning-without-gradients-evolving-agents-using-genetic-algorithms-8685817d84f)
 
-<p align="center">
-<img src="https://github.com/AbhinavSharma07/Gandalf-AI/blob/main/assets/Info.png" align="middle" />
-</p>
+---
 
-Enter the stock symbol and the duration to retrieve historical data, which is fetched using the Yahoo Finance API. The data is then beautifully visualized using **matplotlib** and **mpld3**, allowing you to interact with the chart. Hover over points to see the stock's closing price and the date.
+## 🛠️ Requirements
 
-<p align="center">
-<img src="https://github.com/AbhinavSharma07/Gandalf-AI/blob/main/assets/Info-done.png" align="middle" />
-</p>
+Ensure you have the following installed:
 
-### 2. **Stock Price Prediction**
+- **Python 3.6.2**: [Download](https://www.python.org/downloads/release/python-362/)
+- **Django**: [Installation Guide](https://www.djangoproject.com/)
+- **Numpy**: [PyPI](https://pypi.org/project/numpy/)
+- **Tensorflow**: [PyPI](https://pypi.org/project/tensorflow/)
+- **Keras**: [PyPI](https://pypi.org/project/Keras/)
+- **Seaborn**: [PyPI](https://pypi.org/project/seaborn/)
+- **Yahoo-Finance**: [PyPI](https://pypi.org/project/yahoo-finance/)
+- **Pandas**: [PyPI](https://pypi.org/project/pandas/)
+- **Matplotlib**: [PyPI](https://pypi.org/project/matplotlib/)
 
-<p align="center">
-<img src="https://github.com/AbhinavSharma07/Gandalf-AI/blob/main/assets/Prediction.png" align="middle" />
-</p>
+---
 
-For predicting future stock prices, input the stock symbol, the historical period for training, the number of simulations to run, and the number of days to forecast. Gandalf-AI leverages LSTM models to generate predictions. The results are presented in an interactive graph, where you can hover over points to see the predicted prices for future dates.
+## 🚀 Usage
 
-<p align="center">
-<img src="https://github.com/AbhinavSharma07/Gandalf-AI/blob/main/assets/Prediction-done.png" align="middle" />
-</p>
+### 1. Start the Django Server
 
-### 3. **Trading Agent**
+First, start the Django server using the following command:
 
-<p align="center">
-<img src="https://github.com/AbhinavSharma07/Gandalf-AI/blob/main/assets/Agent.png" align="middle" />
-</p>
-
-In the trading agent interface, enter the stock symbol, the data period for analysis, the initial investment fund, and the trading interval (number of days between buy/sell decisions). Gandalf-AI’s Evolution Strategy-based agent will trade stocks automatically. The buying and selling points are marked on the graph, allowing users to visualize the trading strategy.
-
-<p align="center">
-<img src="https://github.com/AbhinavSharma07/Gandalf-AI/blob/main/assets/Agent-done.png" align="middle" />
-</p>
-
-## Usage Instructions
-
-1. Start the Django server by running the following command:
-   ```bash
-   python manage.py runserver
+```bash
+python manage.py runserver
