@@ -38,9 +38,15 @@ For more info check out this [article](https://towardsdatascience.com/reinforcem
 ## Usage
 
 
+
+
+
+
+
+
 ### Main Page
 <p align="center">
-<img src="https://github.com/AbhinavSharma07/Gandalf-AI/blob/master/assets/Main.PNG" align="middle" />  </p>
+<img src="https://github.com/AbhinavSharma07/Gandalf-AI/blob/main/assets/Main.png" align="middle" />  </p>
 
 The main page gives you three options to choose from:
 
