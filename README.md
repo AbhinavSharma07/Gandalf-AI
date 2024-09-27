@@ -1,6 +1,5 @@
-# Gandalf-AI
+# Gandalf-AI-GUI
 
-# Stock-Market-AI-GUI
 Stock Market Prediction &amp; Trading Bot using AI with a Web Interface
 
 ## Stock Market Prediction using an LSTM Network
