@@ -43,3 +43,42 @@ For more info check out this [article](https://towardsdatascience.com/reinforcem
 First, start the Django server using the following command:
 ```bash
 python manage.py runserver
+Main Page
+<p align="center"> <img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Main.PNG" align="middle" /> </p>
+The main page gives you three options to choose from:
+
+1. Stock Info
+<p align="center"> <img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Info.PNG" align="middle" /> </p> Just input the symbol of the stock and the duration for which to get the data. The data is fetched using the yahoo-finance library and graphed using matplotlib and mpld3. <p align="center"> <img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Info-done.png" align="middle" /> </p> The details are shown in a table, and the closing prices are graphed. Hovering your mouse over the points will display a tooltip with the date and the closing price for that day.
+2. Prediction
+<p align="center"> <img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Prediction.png" align="middle" /> </p> For the prediction, you need to input the symbol for the stock, the period of data to train with, the number of simulations to run, and the number of future days to predict. <p align="center"> <img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Prediction-done.png" align="middle" /> </p> The closing prices of the simulations that are deemed acceptable are graphed using matplotlib and mpld3. Hovering your mouse over the points will display a tooltip with the date and the closing price for that day.
+3. Trading Agent
+<p align="center"> <img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Agent.png" align="middle" /> </p> For the trading agent, you need to input the symbol for the stock, the period of data to trade on, the initial fund, and the number of days to skip between selling or buying. <p align="center"> <img src="https://github.com/crypto-code/Stock-Market-AI-GUI/blob/master/assets/Agent-done.png" align="middle" /> </p> The closing prices are graphed, and the selling and buying days are marked with their respective markers using matplotlib and mpld3. Hovering your mouse over the marker will display the date and the action taken on that day. ```
+Additional Recommendations:
+Dependencies Management:
+
+Ensure that all required packages are listed in your requirements.txt with the correct versions to maintain consistency across different environments.
+Consider using virtual environments (like venv or conda) to manage dependencies effectively.
+Python Version:
+
+Python 3.6.2 is quite outdated. It's recommended to upgrade to a newer version (e.g., Python 3.8 or later) to benefit from improved features and security updates.
+Django Configuration:
+
+Ensure that your Django settings are configured for production if you intend to deploy the application. This includes settings for security, allowed hosts, database configurations, etc.
+AI Models:
+
+Document the architecture of your LSTM and Evolution Strategy agents in more detail if possible.
+Include instructions on how to train these models, including any preprocessing steps required.
+Usage Instructions:
+
+Provide detailed steps on how to set up the project locally, including cloning the repository, setting up the environment, installing dependencies, and running migrations if necessary.
+Include any environment variables or configurations that need to be set.
+Contributing Guidelines:
+
+If you welcome contributions, consider adding a CONTRIBUTING.md file to guide contributors on how to submit issues or pull requests.
+License:
+
+Specify the license under which your project is distributed to inform users and contributors of their rights and responsibilities.
+Contact Information:
+
+Provide a way for users to reach out for support or inquiries, such as an email address or a link to a discussion forum.
+
